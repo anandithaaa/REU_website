@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Ananditha's REU Website</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this template -->
+        <link href="css/freelancer.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Ananditha Raghunath</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Week by Week </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container">
+                <img class="img-fluid mb-5 d-block mx-auto" src="img/bkgr1.jpg" style="width:500px;height:300px;" alt="">
+                <h1 class="text-uppercase mb-0">CRA-W DREU 2018</h1>
+                <hr class="star-light">
+                <h2 class="font-weight-light mb-0">University of Washington, Seattle</h2>
+                <p> 
+                </p>
+            </div>
+        </header>
+        <!-- About Section -->
+        <section class="bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <h2 class="text-center text-uppercase text-white">About</h2>
+                <hr class="star-light mb-5">
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <p class="lead">I'm Ananditha, a rising senior at NYU Courant Institute of Mathematical Sciences. I study Math & Computer Science, and will graduate in May 2019. I hope to get a PhD in Computer Science with a focus on improving healthcare through the use of vision and learning technologies. </p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="lead">At the University of Washington, I'm working under <a href="https://homes.cs.washington.edu/~shapiro/">Dr. Linda Shapiro,</a> a pioneering Computer Vision researcher at the University of Washington Allen School of Computing. My initial project involves writing a CNN to semantically segment images of skin cancer. I plan to submit the segmentation algorithm to the <a href="https://challenge2018.isic-archive.com/">ISIC Challenge.</a></p>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="text-center text-uppercase text-secondary mb-0">Week-by-Week</h2>
+                <hr class="star-dark mb-5">
+                <p class="font-weight-light mb-0">Here I'll give a week-by-week listing of what I get up to.</p><br>
+
+                                <p><b> Week 1:</b>
+                    I arrived in Seattle for the first time on May 29th- what a beautiful city! To get myself familiar with the field of computer vision, I started <a href="https://www.pyimagesearch.com/free-opencv-crash-course/">this </a> tutorial which I highly recommend for anyone trying to learn OpenCV. I concurrently took the <a href= "https://youtu.be/vT1JzLTH4G4"> Stanford CNN for Visual Recognition</a> course. It progresses very quickly, and is nearly 30 hours of video, but is a great resource for those that are looking to understand CNNs and how they play into classification and segmentation. My mission is to also read as many papers as I can, from <a href= "https://github.com/terryum/awesome-deep-learning-papers"> this</a> Github Repo and <a href="https://github.com/jbhuang0604/awesome-computer-vision">this</a> Github repo. I also read about Image Segmentation in general and it's various uses using <a href = “https://courses.cs.washington.edu/courses/cse576/99sp/book.html”>Prof. Shapiro’s textbook</a>.
+                </p>
+                <p> <b>Week 2:</b>
+                    I spent the first day of this week trying to write a cat versus dog image classifier using TensorFlow and TFLearn. I followed a <a href="https://pythonprogramming.net/convolutional-neural-network-kats-vs-dogs-machine-learning-tutorial/">tutorial </a>, but quickly realized that TFLearn has bugs (and many open issues on GitHub) so that wasn't going to work in the immediate future. After the day's labor I ended up writing a vanilla ML classifier with an accuracy of around 75%. This was to be my baseline that I would test any deep learning classification models against. I then wrote simple segmentation programs putting to use the OpenCV tutorials. Since I use JupyterNotebooks to program in Python (easy visualization!) it turned out that functions like cv2.waitKey() weren't going to work, so when it came to implementation, skimage was the better library. Having segmented multiple images of puppies using Otsu and Watershed, I moved to segmenting breast biopsy images that the group had used on a previous project. Shallow segmentation techniques didn't yield great results, thus I shifted to attempting a CNN.
+                </p>
+                <p> <b>Week 3:</b>
+                    I was committed to learning as much about CNNs as I could, so I completed the amazing <a href="fast.ai">Fast.ai </a>course on Deep Learning. This was super helpful and I can't recommend it more! It's taught in a great unassuming way and has greatly clear images to support the lectures. One example is <a href = "https://www.youtube.com/watch?v=f0t-OCG79-U">here</a>. This video makes CNNs crystal clear for anyone! My first task of the REU was to implement a semantic segmentation algorithm for the <a href="https://challenge2018.isic-archive.com/">ISIC</a> challenge 2018, which was to segment images of melanoma lesions on the skin. To this end, I got familiar with a CNN previously developed by the group called <a href="https://arxiv.org/abs/1803.06815">ESPNet.</a> I trained it on the challenge's skin cancer training images. This took several days, even on a GPU. The baseline accuracy, having removed the decoder, augmentatation, and resizing code was around 83%. I retrained the model, adding back the augmentation code and increasing the size to 1028*512. On the previous run i'd downsampled to 100*100. The accuracy dropped to 78%, which was odd. I began thinking about why this was. I also made the website you are reading on Friday of this week!
+                </p>
+		<p> <b>Week 4:</b>
+		I still wasn’t sure why the accuracy had dropped after I augmented the images. If anything, it should have increased as now there were more training images and more pixels for the model to learn from. Then the decoder wasn’t attaching correctly, multiple errors were being thrown. I spent a whole day attempting to debug, but I put that on pause. I set myself a goal: to obtain 2 more baselines before I’d go on to debug the ESPNet code and alter it to suit the melanoma images. I first looked to the <a href="https://github.com/CSAILVision/semantic-segmentation-pytorch"> CSAIL Segmentation </a>. This required various modifications to the data set: organiziging it differently, and creating “.odgt” files. I wrote scripts to make the .odgt file, but still there were compatibility issues. Then I looked toward high ranking submissions of the ISIC challenge last year to help establish a baseline. I found  <a href= "https://github.com/learningtitans/isbi2017-part1"> this </a> algorithm from the RECOD Titans. There were weird errors when I ran this code as well. I had to switch to older versions of python and various libraries. I even recreated <a href=“https://github.com/ContinuumIO/anaconda-issues/issues/5191”>this </a> error that is a current issue in the Continuum project on GitHub. Overall this week I’ve found that it’s difficult working with other people’s code because the projects on GitHub aren’t maintained, thus there isn’t compatibility with software updates/changes. And seeing that most of the libraries are open source, there are many changes to the interlinked libraries that occur rapidly. I had to switch back and forth between versions of pytorch and other small internal libraries. This process was good though, because now I’m quick to realize dependencies and can alter what needs to be reinstalled/uninstalled before I run the code on the GPU. It’s also great to see the discussions and issues that are raised within the libraries’ repos on GitHub. Almost always there are more than 5 people with the same error and there is help online for those that seek! 
+	</p><p>
+I was also assigned a second project this week. It’s really novel and interesting work on tracking pathologists’ mouse clicks when detecting great cancer in digital images. We want to know what the typical “distractor” tumors have in common visually, i.e. when clinicians pick the benign (“distractor”) tumor to be malignant, what makes them think it’s cancerous instead of marking it correctly as  normal. This is what I’ll work on once the segmentation work comes to a close.
+		</p>
+
+            </div>
+        </section>
+
+
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+                <small>Thanks for coming by!</small>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-to-top d-lg-none position-fixed ">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/freelancer.min.js"></script>
+
+    </body>
+
+</html>
